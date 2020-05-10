@@ -201,6 +201,20 @@
   <br>
   <br>
 
+  <script>
+    function display(div) {
+      var x = document.getElementById(div);
+      var z = document.getElementById(div.concat("Arrow"));
+      if (x.style.display == "block") {
+        x.style.display = "none";
+        z.innerHTML = "<img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style='width:20px;height:10px;'>";
+      } else {
+        x.style.display = "block";
+        z.innerHTML = "<img src = 'http://csci571.com/hw/hw6/images/arrow_up.png' style='width:20px;height:10px;'>";
+      }
+    }
+  </script>
+
   <!--/ Section: Education /-->
   <section id="service" class="services-mf route">
     <div class="container">
@@ -222,10 +236,10 @@
         <div class="col-md-6">
           <div class="service-box" style="height: wrap">
             
-            <a href = "https://www.usc.edu/" target="_blank">
+              <a href = "https://www.usc.edu/" target="_blank">
               <div class="service-ico col-centered">
-                <img src="img/usc.png" class="" alt="" style=" width: 30%; height: 30%">
-              </div>
+                <img src="img/usc.png" class="" alt="" style=" width: 30%; height: 150px">
+              </div></a>
 
               <div class="service-content">
                 <h2 class="s-title">University of Southern California</h2>
@@ -238,8 +252,12 @@
                   <hr> 
                 </p>
               </div>
-            </a>
 
+            <div id="USCArrow" style="text-align: center" onclick="display('USC')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="USC">
             <p class="s-description">
             <ul>
               <li><b>CGPA: 3.7/4.00</b></li>
@@ -259,6 +277,7 @@
               </li>
             </ul>
             </p>
+            </div>
           </div>
         </div>
         <!--/ Section: Education - USC/-->
@@ -266,11 +285,12 @@
 
         <!--/ Section: Education - VIT/-->
         <div class="col-md-6">
-          <div class="service-box" style="height:wrap">
-            <div class="service-ico col-centered">
-              <img src="img/vit.png" class="" alt="" style=" width: 30%; height: 30%">
-            </div>
+          <div class="service-box" style="height: wrap">
             <a href = "http://www.vit.edu/index.php" target= "_blank">
+            <div class="service-ico col-centered">
+              <img src="img/vit.png" class="" alt="" style=" width: 30%; height: 150px">
+            </div></a>
+
             <div class="service-content">
               <h2 class="s-title">Vishwakarma Institute of Technology</h2>
               <hr>
@@ -282,8 +302,12 @@
                 <hr> 
               </p>
             </div>
-            </a>
 
+            <div id="VITArrow" style="text-align: center" onclick="display('VIT')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="VIT">
             <p class="s-description">
             <ul>
               <li><b>CGPA: 9.08/10.00 (WES: 3.99/4.00</b>)</li>
@@ -298,6 +322,7 @@
             </ul>
             </p>
             </div>
+            </div>
         </div>
         <!--/ Section: Education - VIT/-->
       </div><!--row ends-->
@@ -308,8 +333,9 @@
           <div class="service-box" style="height:wrap">
             <a href = "http://vidyamaha.edu.in/apte_juniorcollege_about.html" target="_blank">
             <div class="service-ico col-centered">
-              <img src="img/LA.gif" class="" alt="" style=" width: 30%; height: 30%">
-            </div>
+              <img src="img/LA.gif" class="" alt="" style=" width: 30%; height: 150px">
+            </div></a>
+
             <div class="service-content">
               <h2 class="s-title">Laxmanrao Apte Prashala</h2>
               <hr>
@@ -321,8 +347,12 @@
                 <hr> 
               </p>
             </div>
-            </a>
 
+            <div id="LAXArrow" style="text-align: center" onclick="display('LAX')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="LAX">
               <p class="s-description">
               <ul>
                 <i><li>HSC XII : Percentage: 94% | <b>Secured 99.85</b> Board Percentile among <b>1.4 million+</b> students.</li>
@@ -330,6 +360,7 @@
                 <li><b>Felicitated</b> for ranking in top 3 among 150 students in school and scoring highest marks in Computer Science Course (195/200)</li></i>
               </ul>
               </p>
+            </div>
             </div>
           </div><!--service box-->
         <!--/ Section: Education - LAX/-->
@@ -339,8 +370,8 @@
           <div class="service-box" style="height:wrap">
             <a href = "https://www.thebishopsschool.org/tbsweb/Public/Home.aspx" target="_blank">
             <div class="service-ico col-centered">
-              <img src="img/bis.jpg" class="" alt="" style=" width: 30%; height: 30%">
-            </div>
+              <img src="img/bis.jpg" class="" alt="" style=" width: 30%; height: 150px">
+            </div></a>
             <div class="service-content">
               <h2 class="s-title">The Bishop's School</h2>
               <hr>
@@ -352,8 +383,12 @@
                 <hr> 
               </p>
             </div>
-            </a>
 
+            <div id="BishopsArrow" style="text-align: center" onclick="display('Bishops')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="Bishops">
               <p class="s-description">
               <ul>
                 <i>
@@ -363,6 +398,7 @@
                 </i>
                </ul>
               </p>
+            </div>
 
             </div>
           </div>
@@ -400,8 +436,9 @@
           <div class="service-box" style="height:wrap">
             <a href = "https://www.salesforce.com" target = "_blank">
               <div class="service-ico col-centered">
-                <img src="img/salesforce.png" class="" alt="" style=" width: 50%; height: 50%">
-              </div>
+                <img src="img/salesforce.png" class="" alt="" style=" width: 50%; height: 150px">
+              </div></a>
+
               <div class="service-content">
                 <h2 class="s-title">Salesforce</h2>
                 <hr>
@@ -413,12 +450,18 @@
                 <hr>
                 </p>
               </div>
-            </a>
+
+            <div id="SalesforceArrow" style="text-align: center" onclick="display('Salesforce')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="Salesforce">
             <p class="s-description">
               <i>
                 <li>Part of the Mulesoft team.</li>
               </i>
             </p>
+            </div>
           </div>
         </div>
         <!--/ Section: Experiences - Salesforce ends /-->
@@ -428,8 +471,8 @@
           <div class="service-box" style="height:wrap">
             <a href = "https://viterbi.usc.edu/directory/faculty/Bono/Claire" target = "_blank">
             <div class="service-ico col-centered">
-              <img src="img/viterbi.jpg" class="" alt="" style=" width: 30%; height: 30%">
-            </div>
+              <img src="img/viterbi.jpg" class="" alt="" style=" width: 30%; height: 150px">
+            </div></a>
             <div class="service-content">
               <h2 class="s-title">Viterbi School of Engineering, USC </h2>
               <hr>
@@ -441,7 +484,12 @@
                 <hr> 
               </p>
             </div>
-            </a>
+
+            <div id="TAArrow" style="text-align: center" onclick="display('TA')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="TA">
             <p class="s-description">
               <i><li><b>Course: CSCI 455:</b> Programming System Design</li>
                 <li><b>Taught by:</b><a href = "https://viterbi.usc.edu/directory/faculty/Bono/Claire" target = "_blank"> Prof. Claire Bono</a></ li>
@@ -454,6 +502,7 @@
               </i>
             </p>
             </div>
+            </div>
         </div>
         <!--/ Section: Experiences - TA ends /-->
       </div>
@@ -465,8 +514,8 @@
           <div class="service-box" style="height:wrap">
             <a href = "https://www.verkada.com/" target = "_blank">
               <div class="service-ico col-centered">
-                <img src="img/v.png" class="" alt="" style=" width: 30%; height: 30%">
-              </div>
+                <img src="img/v.png" class="" alt="" style=" width: 30%; height: 150px">
+              </div></a>
               <div class="service-content">
                 <h2 class="s-title">Verkada</h2>
                 <hr>
@@ -478,7 +527,12 @@
                 <hr>
                 </p>
               </div>
-            </a>
+
+            <div id="VerkadaArrow" style="text-align: center" onclick="display('Verkada')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="Verkada">
             <p class="s-description">
               <i>
                 <li>Contributed over <b>2500 lines of production code</b> which supports tens of thousands of customer cameras, while working in ‘Smart Cameras’ backend team.</li>
@@ -487,6 +541,7 @@
                 <li>Participated in weekly sprints and pair programming sessions to debug production code, monitor and fix code deployments, software updates using APMs.</li>
               </i>
             </p>
+            </div>
           </div>
         </div>
         <!--/ Section: Experiences - Verkada ends /-->
@@ -495,8 +550,9 @@
           <div class="service-box" style="height:wrap">
             <a href = "https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty" target = "_blank">
               <div class="service-ico col-centered">
-                <img src="img/viterbi.jpg" class="" alt="" style=" width: 30%; height: 30%">
-              </div>
+                <img src="img/viterbi.jpg" class="" alt="" style=" width: 30%; height: 150px">
+              </div></a>
+
               <div class="service-content">
                 <h2 class="s-title">Viterbi School of Engineering, USC </h2>
                 <hr>
@@ -508,7 +564,11 @@
                 <hr>
                 </p>
               </div>
-            </a>
+            <div id="RAArrow" style="text-align: center" onclick="display('RA')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+          <div id="RA">
             <p class="s-description">
               <i><li><b>Research Mentor:</b><a href = "https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty" target = "_blank"> Dr. Prof. Saty Raghavachary</a></li>
                 <li>The topic for research was <b>'Architecture Modification Algorithms for Neural Networks'.</b></li>
@@ -522,48 +582,53 @@
             </p>
           </div>
         </div>
-        <!--/ Section: Experiences - RA ends /-->
       </div>
-      <!--/ row ends /-->
+      <!--/ Section: Experiences - RA ends /-->
 
-      <!--/ Section: Experiences - Velloce /-->
       <div class="row">
         <!--/ Section: Experiences - CAIS /-->
         <div class="col-md-6">
           <div class="service-box" style="height:wrap">
             <a href = "https://www.cais.usc.edu/" target = "_blank">
               <div class="service-ico col-centered">
-                <img src="img/cais.png" class="" alt="" style=" width: 30%; height: 30%">
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Center for Artificial Intelligence (CAIS)</h2>
-                <hr>
-                <p class="s-description text-center">
-                  Student Researcher
-                </p>
-                <p class="s-description text-center">
-                  October 2018 - April 2019
-                <hr>
-                </p>
-              </div>
-            </a>
-            <p class="s-description">
-              <i>
-                <li>Project aimed at <b>detecting poaching activities and animals</b> in forests of South Africa using deep learning techniques on thermal infrared video feeds from drones.</li>
-                <li>Worked on <b>deployment</b> of trained Tensorflow models on edge computing device <b>(Intel Movidius Stick)</b> for
-                  inference purpose on site.</li>
-              </i>
-            </p>
+                <img src="img/cais.png" class="" alt="" style=" width: 30%; height: 150px">
+              </div></a>
+            <div class="service-content">
+              <h2 class="s-title">Center for Artificial Intelligence (CAIS)</h2>
+              <hr>
+              <p class="s-description text-center">
+                Student Researcher
+              </p>
+              <p class="s-description text-center">
+                October 2018 - April 2019
+              <hr>
+              </p>
+            </div>
+
+            <div id="CAISArrow" style="text-align: center" onclick="display('CAIS')">
+              <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+            </div>
+
+            <div id="CAIS">
+              <p class="s-description">
+                <i>
+                  <li>Project aimed at <b>detecting poaching activities and animals</b> in forests of South Africa using deep learning techniques on thermal infrared video feeds from drones.</li>
+                  <li>Worked on <b>deployment</b> of trained Tensorflow models on edge computing device <b>(Intel Movidius Stick)</b> for
+                    inference purpose on site.</li>
+                </i>
+              </p>
+            </div>
           </div>
         </div>
         <!--/ Section: Experiences - CAIS ends /-->
-
+        <!--/ Section: Experiences - Veloce /-->
         <div class="col-md-6">
           <div class="service-box" style="height:wrap">
             <a href = "https://www.facebook.com/TeamVeloce/" target="_blank">
-            <div class="service-ico col-centered">
-              <img src="img/vr.png" class="" alt="" style=" width: 30%; height: 30%">
-            </div>
+              <div class="service-ico col-centered">
+                <img src="img/vr.png" class="" alt="" style=" width: 30%; height: 150px">
+              </div></a>
+
             <div class="service-content">
               <h2 class="s-title">Team Veloce Racing</h2>
               <hr>
@@ -572,10 +637,15 @@
               </p>
               <p class="s-description text-center">
                 June 2016 - July 2017
-                <hr> 
+              <hr>
               </p>
             </div>
-            </a>
+
+          <div id="VeloceArrow" style="text-align: center" onclick="display('Veloce')">
+            <img src = 'http://csci571.com/hw/hw6/images/arrow_down.png' style="width:20px;height:10px;">
+          </div>
+
+          <div id="Veloce">
             <p class="s-description">
               <i>
                 <li><b>Co-led a team of 30</b> individuals in building a counterpart of a Formula 1 vehicle.</li>
@@ -583,13 +653,15 @@
                 <li>Worked in the engine and electronics department, <b>improved acceleration response of engine</b> (Yamaha R6) by analysis, parameter tuning, and ECU based engine mapping using various sensors: temperature, humidity, throttle body, etc. (Acceleration 75m in 4.8 seconds).</li>
               </i>
             </p>
-            </div>
+          </div>
         </div>
-        <!--/ Section: Experiences - Velloce ends /-->
+        <!--/ Section: Experiences - Veloce ends /-->
       </div>
       <!--/ row ends /-->
+
+
     </div>
-    <!--/ container ends /-->
+    <!--/ Container: Experiences ends /-->
   </section>
   <!--/ Section: Experience ends /-->
 
@@ -625,7 +697,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Part of Speech Tagging using Hidden Markov Models</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">NLP</span> / <span class="w-date">August 2019</span>
+                      <span class="w-ctegory">NLP</span>
                     </div>
                   </div>
                 </div>
@@ -647,7 +719,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Product Search Website</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">March 2019</span>
+                      <span class="w-ctegory">Web Design</span>
                     </div>
                   </div>
                 </div>
@@ -670,7 +742,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Autonomous Robot Security System for Data centers</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Machine Learning</span> / <span class="w-date">June 2017</span>
+                      <span class="w-ctegory">Machine Learning</span>
                     </div>
                   </div>
                 </div>
@@ -695,7 +767,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title"> Intelligent Case for Protecting Smartphones using Neural Networks </h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Machine Learning</span> / <span class="w-date">April 2018</span>
+                      <span class="w-ctegory">Machine Learning</span>
                     </div>
                   </div>
                 </div>
@@ -717,7 +789,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">eBay Clone (Android App)</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Android</span> / <span class="w-date">March 2019</span>
+                      <span class="w-ctegory">Android</span>
                     </div>
                   </div>
                 </div>
@@ -739,7 +811,7 @@
                   <div class="col-sm-12">
                     <h2 class="w-title">Mine Sweeper Game - Java</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Java</span> / <span class="w-date">Oct 2018</span>
+                      <span class="w-ctegory">Java</span>
                     </div>
                   </div>
                 </div>

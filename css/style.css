@@ -813,6 +813,36 @@ a:hover {
   font-size: 1.2rem;
 }
 
+#USC{
+  display: none;
+}
+#VIT{
+  display: none;
+}
+#LAX{
+  display: none;
+}
+#Bishops{
+  display: none;
+}
+#Salesforce{
+  display: none;
+}
+#TA{
+  display: none;
+}
+#Verkada{
+  display: none;
+}
+#RA{
+  display: none;
+}
+#CAIS{
+  display: none;
+}
+#Veloce{
+  display: none;
+}
 /*======================================
 //--//-->   TESTIMONIALS
 ======================================*/
